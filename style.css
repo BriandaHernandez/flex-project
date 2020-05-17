@@ -1,0 +1,61 @@
+
+
+/*First way of organizing*/
+/*start by designing for mobile*/
+/*Page Organization*/
+#large-container {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: auto;  /*Orginal size*/
+}
+/*
+Deal with the media breakpoints starting from small 
+then moving to bigger and bigger sizes. 
+add rule to flex wrap at a certain viewport
+@media tablet {
+    content needs to get bigger to fit the screen size 
+    possibly-boxes need to unwrap to two columns 
+}*/
+
+/*Content Organization*/
+#medium-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+/*Content Boxes*/
+.small-container {
+    display: flex; 
+    justify-content: center;
+}
+/*add order properties to each content box to determine order show*/
+
+/*Second way of organizing*/
+/*Page Organization*/
+.large-container {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+/*
+Deal with the media breakpoints starting from small 
+then moving to bigger and bigger sizes. 
+add rule to flex wrap at a certain viewport
+@media {
+    flex-wrap: wrap;
+}*/
+
+/*Content Organization*/
+.medium-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+/*Content Boxes*/
+.small-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}

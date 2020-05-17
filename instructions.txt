@@ -1,0 +1,5 @@
+Add at least 8 different CSS properties on to your 
+square to style it, maybe it's not a square anymore!
+
+BONUS: Add some form inputs into your square.
+Push your code to github pages!
